@@ -308,7 +308,6 @@ ul {
 }
 
 .filter-section {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;    
@@ -316,13 +315,19 @@ ul {
     padding-right: 15px;
 }
 
+.filter {
+    text-align: center;
+}
+
 .filter button {
     border: none;
     background-color: var(--button-bg-color);
+    color: var(--primary-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    align-items: center;
     text-align: center;
     letter-spacing: 0.03em;    
     margin-bottom: 50px;
@@ -363,6 +368,7 @@ ul {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    padding-left: 24px;
     margin: 0;
 }
 
@@ -370,6 +376,7 @@ ul {
     color: var(--text-color);    
     font-size: 16px;
     line-height: 1.88;
+    padding-left: 24px;
     margin: 0;    
 }
 
