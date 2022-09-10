@@ -327,6 +327,7 @@ ul {
     letter-spacing: 0.03em;    
     margin-bottom: 50px;
     padding: 6px 22px ;
+    cursor: pointer;
 }
 
 .filter .filtr+.filtr {
