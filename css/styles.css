@@ -55,18 +55,12 @@ ul {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    outline: 1px solid red;
+    width: 1200px;    
     padding-left: 15px;
     padding-right: 15px;    
 }
 
 /* Шапка сторінки */
-
-.header {    
-    padding-top: 24px;
-    padding-bottom: 24px;    
-}
 
 .nav-header {
     display: flex;
@@ -85,7 +79,9 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none; 
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px; 
     margin-right: 92px;       
 }
 .accent {
@@ -124,6 +120,11 @@ ul {
 
 .nav-contact {
     display: flex;    
+}
+
+.nav-contact .items a {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav-contact .items + .items {
@@ -193,8 +194,11 @@ ul {
 }
 
 .peculiarity-list {
-    display: flex;
-    padding-right: 30px;
+    display: flex;    
+}
+
+.peculiarity-list .items+.items {
+    margin-left: 30px;
 }
 
 /* Чим ми займаємося */
@@ -243,12 +247,21 @@ ul {
     justify-content: space-between;
 }
 
+.team-list .items + .items {
+    margin-left: 30px;
+}
+
+.team-list img {
+    padding-bottom: 30px;
+}
+
 .team-list p {
     font-size: 16px;
     line-height: 1.19;
     margin: 0;
     padding-bottom: 30px;    
 }
+
 /* Підвал сторінки */
 
 .footer {
@@ -282,19 +295,23 @@ ul {
     color: var(--text-white);
 }
 
-.footer-contact.mail {
-    padding-top: 9px;
-    padding-bottom: 9px;
+.footer-contact {
+    display: block;
+    margin-top: 9px;    
 }
 
 /* Портфоліо */
 
-.filter {
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filter-section {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    outline: 1px solid red;
+    width: 1200px;    
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -307,8 +324,13 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-    padding-right: 6px;
+    letter-spacing: 0.03em;    
+    margin-bottom: 50px;
+    padding: 6px 22px ;
+}
+
+.filter .filtr+.filtr {
+    margin-left: 8px;
 }
 
 .filtr:hover,
@@ -318,10 +340,20 @@ ul {
 }
 
 .list {
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+}    
+
+.list .items:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.list .items {
+    margin-bottom: 30px;
+}
+
+.list .items:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
 }
 
 .projects-title {
