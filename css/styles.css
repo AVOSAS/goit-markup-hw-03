@@ -35,6 +35,13 @@ ul {
     margin: 0;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
 .title {
     color: var(--primary-text-color);
 }
@@ -61,11 +68,13 @@ ul {
 }
 
 /* Шапка сторінки */
+.header {
+    border: 1px solid #ECECEC;
+}
 
 .nav-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;    
 }
 
 .link-nav {
@@ -119,7 +128,8 @@ ul {
 }
 
 .nav-contact {
-    display: flex;    
+    display: flex;
+    margin-left: auto;    
 }
 
 .nav-contact .items a {
@@ -144,8 +154,7 @@ ul {
 /* Основний */
 .main {
     background-color: var(--secondary-bg-color);    
-    text-align: center;    
-    height: 600px;    
+    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;    
 }
@@ -173,8 +182,7 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.06em;    
     cursor: pointer;   
-    border: none;
-    margin-bottom: 0;    
+    border: none;    
 }
 
 /* Особливості */
@@ -190,7 +198,7 @@ ul {
     line-height: 1.14;    
     text-transform: uppercase;    
     margin: 0;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .peculiarity-list {
@@ -208,8 +216,11 @@ ul {
 }
 
 .case-list {
-    display: flex;
-    justify-content: space-between;    
+    display: flex;       
+}
+
+.case-list .items + .items {
+    margin-left: 30px;
 }
 
 .case-title,
@@ -220,7 +231,7 @@ ul {
     line-height: 1.67;
     text-align: center;
     margin: 0;
-    padding-bottom: 50px;    
+    margin-bottom: 50px;    
 }
 
 /* Наша команда  */
@@ -240,7 +251,7 @@ ul {
     line-height: 1.19;
     text-align: center;
     margin: 0; 
-    padding-bottom: 10px;   
+    margin-bottom: 10px;   
 }
 
 .team-list {
@@ -248,12 +259,17 @@ ul {
     justify-content: space-between;
 }
 
+.team-list .items {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-list .items + .items {
     margin-left: 30px;
 }
 
 .team-list img {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .team-list p {
@@ -261,7 +277,7 @@ ul {
     line-height: 1.19;
     text-align: center;
     margin: 0;
-    padding-bottom: 30px;    
+    margin-bottom: 30px;    
 }
 
 /* Підвал сторінки */
@@ -299,15 +315,14 @@ ul {
 
 .footer-contact {
     display: block;
-    margin-top: 9px;    
+    /* margin-top: 9px;     */
+}
+
+.footer-list .items + .items {
+    margin-top: 9px;
 }
 
 /* Портфоліо */
-
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .filter-section {
     margin-left: auto;
@@ -315,10 +330,13 @@ ul {
     width: 1200px;    
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filter {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .filter button {
@@ -332,7 +350,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;    
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     padding: 6px 22px ;
     cursor: pointer;
 }
@@ -364,21 +382,26 @@ ul {
     margin-bottom: 0px;
 }
 
+.border {
+    border: 1px solid #eeeeee;
+    padding: 20px 24px;
+    border-top: none;
+}
+
 .projects-title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
-    letter-spacing: 0.06em;
-    padding-left: 24px;
+    letter-spacing: 0.06em;    
     margin: 0;
+    margin-bottom: 4px;
 }
 
 .projects-subtitle {
     color: var(--text-color);    
     font-size: 16px;
-    line-height: 1.88;
-    padding-left: 24px;
+    line-height: 1.88;    
     margin: 0;    
 }
 
